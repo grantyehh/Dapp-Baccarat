@@ -1,0 +1,64 @@
+.wrapper {
+  background-image:url('../277286.jpg');
+  min-height: 700px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  padding:  30px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.TitleWrapper{
+  width: 50%;
+  height: 200px;
+  background-color: #191b22;
+  border-top: 1px solid #31353e;
+  border-bottom: 1px solid #31353e;
+  place-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #38e7f3;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(226, 251, 87);
+}
+
+.InputTitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  color:rgb(84, 46, 254);
+}
+
+.EntryFeeNotice {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #81f027;
+}
+
+.btn {
+  background-color: #17191f;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  place-self: center;
+  color: #5da8fe;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-weight: bolder;
+  font-size: 1rem;
+  border: 1px solid #53b1f4;
+}

@@ -1,0 +1,361 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposit",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "ChooseWinner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "PlayerResult",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "complete",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RandomValues",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "fulfilled",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "randomWords",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "betRecord",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkResult",
+				"outputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "banker_sequnece",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bnaker_sum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "player_sequence",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "player_sum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bet",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enter_Banker",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enter_BankerPair",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enter_Player",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enter_PlayerPair",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enter_Tie",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPlayers",
+				"outputs": [
+					{
+						"internalType": "address payable[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getbalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "ownership_transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "playerExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "existence",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "players",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestRanNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\Baccarat.sol": "Baccart"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/VRFv2Consumer.sol": {
+			"keccak256": "0x14a2ed3ec4febcc8186486430ed571694b88254e3b4e5d97c75be8af235be984",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://213b20e3639ea1856a234dd4aa7b90fe8a15eca50e891f3f65278225985ea14a",
+				"dweb:/ipfs/QmTsHu1Kwe6mtWuTvgysLr4NZ6tARrigcTb6RsUMuYyk9a"
+			]
+		},
+		"contracts\\Baccarat.sol": {
+			"keccak256": "0x83d89070831cd1766abde6a869bf924f5644f482a154ebf3c2fc9fb3d3dd9e80",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ea6b4ded048170544156601279a4611b30a34e46ba09310b50706816979b2baf",
+				"dweb:/ipfs/QmdT7ARrrDng1QHnVqvTDTX1Ayzh66QfJkTVz2wG84BouH"
+			]
+		},
+		"node_modules/@chainlink/contracts/src/v0.8/ConfirmedOwner.sol": {
+			"keccak256": "0x8a3718c549ae07715666def2aa4d5e310104f2109b9148d4179701c163be231a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2c77e6581b52de12647bfb9efdbde01297650663e5e93b89ae87e84d019c104e",
+				"dweb:/ipfs/QmUwkm6qz8TuwWuAvBdeDukBGqjaKQvgvfAi7TT8ZPepMz"
+			]
+		},
+		"node_modules/@chainlink/contracts/src/v0.8/ConfirmedOwnerWithProposal.sol": {
+			"keccak256": "0xa043b4c8a5cbf1231d2b249aa4b892f727700ed56d26103ef113e28d30dd3571",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://23fe96848d4368e63163cbd24285f98a096f0323e8ec13e294bdf438d9eb7f42",
+				"dweb:/ipfs/QmPJpwgnnBj1wDHAmZLQYxStDV5wBSpVX3auwa57sUgG9p"
+			]
+		},
+		"node_modules/@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol": {
+			"keccak256": "0xa5a63e3281c846ec9c603e7696bf50474bc3b55695c24cec1dfddfde15d7ef0d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://750c3ee63ae4f01b42569d20df3652c8666ec9e6af5d612505c377badbc7085f",
+				"dweb:/ipfs/QmW6GicGDQQE4uAQgZVMGueYNPcjDTZrnV5CPSMzJG4eD2"
+			]
+		},
+		"node_modules/@chainlink/contracts/src/v0.8/interfaces/OwnableInterface.sol": {
+			"keccak256": "0xea9ae0e7a7106b794d4d858f9450ce69b6ad9f9a481da8347cb03d9e47f4a7fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://89b46f89699c16e464247eaf849944b4a6c0c1353b140abb4c279508da621242",
+				"dweb:/ipfs/QmWv1NxKEUiCjNMTgHLn6mrTxG9qTYzE6ZbXMq4VR9idGn"
+			]
+		},
+		"node_modules/@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol": {
+			"keccak256": "0xa6b5c32130999453b155c450de82aa5d9e6b3e412b7b009bc39db8ef08b54e02",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81046ac392b9f5ad0354623cdb091ed53e43b5d4673e4a0d4b07d87a6f7fa85d",
+				"dweb:/ipfs/QmPtfypdqjcAmRmu4bGz4eS6gVd7mEsjtJtKpzWtQsCegm"
+			]
+		}
+	},
+	"version": 1
+}
